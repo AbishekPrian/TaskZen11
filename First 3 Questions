@@ -1,0 +1,38 @@
+1. Java Access Modifiers
+
+public: 
+   - Class: The class is accessible from any other class.
+   - Method/Variable: The method or variable is accessible from any other class.
+
+protected:
+   - Class: The class is accessible within its own package and by subclasses.
+   - Method/Variable: The method or variable is accessible within its own package and by subclasses, even if they are in different packages.
+
+default (no modifier):
+   - Class: The class is accessible only within its own package.
+   - Method/Variable: The method or variable is accessible only within its own package. If no access modifier is specified, 
+   the default access level applies.
+
+private:
+   - Class: The class cannot be private (except for inner classes).
+   - Method/Variable: The method or variable is accessible only within the class it is defined in.
+
+ 2. Difference Between Exception and Error
+
+Exception: This represents an issue that occurs during the execution of a program and can typically be handled or recovered from.
+Exceptions are conditions that a program can anticipate and respond to, such as file not found, network errors, or invalid input.
+
+Error: This represents serious issues that are not intended to be handled by programs. 
+Errors usually indicate problems with the runtime environment or system-level issues, such as memory leaks or hardware failures. 
+For example, OutOfMemoryError or StackOverflowError.
+
+
+ 3. Difference Between Checked and Unchecked Exception
+
+- Checked Exception: These are exceptions that must be either caught or declared in the method signature using the throws keyword. 
+They are checked at compile-time. The programmer is required to handle these exceptions explicitly.
+  - Examples: IOException, ClassNotFoundException
+
+- Unchecked Exception: These exceptions are not checked at compile-time. They are derived from RuntimeException and its subclasses. 
+The programmer is not required to handle these exceptions explicitly, though it is often good practice to do so.
+  - Examples: NullPointerException, ArrayIndexOutOfBoundsException
